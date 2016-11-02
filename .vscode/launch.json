@@ -5,12 +5,12 @@
             "name": "C++ Launch (Windows)",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "enter program name, for example ${workspaceRoot}/a.exe",
-            "args": [],
+            "program": "F:\\code\\Eins\\first.exe",
+            "args": ["-g", "F:\\code\\Eins\\first.cpp"],
             "stopAtEntry": false,
-            "cwd": "${workspaceRoot}",
+            "cwd": "F:\\code\\Eins",
             "environment": [],
-            "externalConsole": false
+            "externalConsole": true
         },
         {
             "name": "C++ Attach (Windows)",
