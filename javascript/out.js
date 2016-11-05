@@ -1,17 +1,27 @@
-function fun() {
-    this.add = function() {
-        var mydiv = document.createElement("div");
-        num[0]++; 
-        mydiv.style.height = "100px";
-        mydiv.style.background = "red";
-        document.getElementsByTagName("body")[0].appendChild(mydiv);
+alert("Hello,World!");
+
+function fun(obj) {
+    if(obj.value == "")
+    obj.value = 'input cannot be empty';
+}
+
+function fun2(obj) {
+    obj.value = "input cannot be empty!";
+}
+
+function student(name, age) {
+    this.name = name;
+    this.age = age;
+
+    this.study = function() {
+        alert("studying");
     }
 
-    this.delete = function() {
-        var obj = document.getElementById();
-        num[0]--;
-        obj.parentNode.removeChild(obj);
+    this.eat = function() {
+        alert("eating");
     }
-};
+}
 
-var s = new fun();
+var s = "abcdefghijklmn";
+
+alert(s[2]);
