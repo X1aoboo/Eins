@@ -1,16 +1,14 @@
 function fun() {
-    this.add = function() {
-        var mydiv = document.createElement("div");
-        num[0]++; 
+     this.add = function(color) {
+         var mydiv = document.createElement("div");
+         mydiv.id = color;
         mydiv.style.height = "100px";
-        mydiv.style.background = "red";
-        document.getElementsByTagName("body")[0].appendChild(mydiv);
-    }
-
-    this.delete = function() {
-        var obj = document.getElementById();
-        num[0]--;
-        obj.parentNode.removeChild(obj);
+        mydiv.style.background = color;
+         document.getElementsByTagName("body")[0].appendChild(mydiv);
+        };
+    this.delete = function(color) {
+        var obj = document.getElementById(color);
+         obj.parentNode.removeChild(obj);
     }
 };
 

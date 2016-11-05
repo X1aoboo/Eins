@@ -1,14 +1,10 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <h1><JavaScript in head. /h1>
-        <script>
-            alert("head");
-        </script>
     </head>
     <body>
         <script src="out.js"></script>
-        <button onclick="s.add()">add</button>
-        <button onclick="s.delete()">delete</button>
+        <input id = "in"type="text"><button onclick="s.add(document.getElementById('in').value)">add</button><br>
+        <input id = "out" type = "text"><button onclick="s.delete(document.getElementById('out').value)">delete</button>
     </body>
 </html>
